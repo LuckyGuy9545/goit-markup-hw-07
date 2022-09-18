@@ -1,0 +1,198 @@
+/* --Footer--*/
+.footer_main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background_footer;
+}
+
+.footer_logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    color: $color_white;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer_web {
+    color: $brand_style;
+}
+
+.adrress_ul_foot li {
+    margin-bottom: 9px;
+}
+
+.adrress_ul_foot li:last-child {
+    margin-bottom: 0px;
+}
+
+.adrress_ul_foot {
+    margin: 0;
+}
+
+.contact-link_f {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: $color_grey;
+    cursor: pointer;
+
+    transition: color 250ms $cubic_bezier;
+}
+
+.contact-link_f:hover,
+.contact-link_f:focus {
+    color: $brand_style;
+    transition: color 250ms $cubic_bezier;
+}
+
+.footer_main,
+.footer_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    color: $color_white;
+
+    transition: color 250ms $cubic_bezier;
+}
+
+.footer_link:hover,
+.footer_link:focus {
+    color: $brand_style;
+    transition: color 250ms $cubic_bezier;
+}
+
+.footer_main .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.foot_adrress_block {
+    margin-right: 70px;
+}
+
+/* ---Join us div---*/
+.joinus_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.joinus_block {
+    width: 206px;
+    margin-right: 93px;
+}
+
+.joinus_socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.joinus_socials a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    color: $social_text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color 250ms $cubic_bezier,
+        background-color 250ms $cubic_bezier;
+}
+
+.joinus_socials a:hover,
+.joinus_socials a:focus {
+    background-color: $brand_style;
+    color: $color_white;
+
+    transition: color 250ms $cubic_bezier,
+        background-color 250ms $cubic_bezier;
+}
+
+/* ---- Sign Up Div ---- */
+
+.sign_up_block {
+    width: 570px;
+}
+
+.sign_up_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.email_form_field {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup_input_email {
+    width: 358px;
+    height: 50px;
+
+    background-color: transparent;
+    color: $color_white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.signup_input_email::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.signup_submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_submit,
+.form_submit_btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    width: 200px;
+    height: 50px;
+    background-color: $brand_style;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+    color: $color_white;
+    cursor: pointer;
+}
+
+.signup_submit:hover,
+.signup_submit:focus,
+.form_submit_btn:hover,
+.form_submit_btn:focus {
+    background-color: $blue_button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms $cubic_bezier;
+}
+
+.form_footer_icon {
+    margin-left: 10px;
+}

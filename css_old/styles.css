@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --brand_style: #2196f3;
   --color_white: #ffffff;
   --color_grey: #757575;
@@ -9,7 +9,10 @@
   --social_text: #afb1b8;
   --cubic_bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
+*/
 
+/* ---- added to SASS ---- */
+/*
 h1,
 h2,
 h3 {
@@ -25,7 +28,7 @@ img {
 }
 
 /* --Body-- */
-
+/*
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color_grey);
@@ -58,14 +61,13 @@ ul {
 
 .container {
   width: 1200px;
-  /*outline: 2px solid red;*/
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* --Header-- */
+/* --Header-- */ /*
 .header .container {
   display: flex;
   align-items: center;
@@ -160,9 +162,10 @@ ul {
 
 .link_nav .link.current {
   color: var(--brand_style);
-}
+} */
 
 /* Подчеркивание Current page*/
+/*
 .current::after {
   content: "";
   position: absolute;
@@ -175,8 +178,9 @@ ul {
   background-color: var(--brand_style);
   border-radius: 4px;
 }
-
+*/
 /* HEADER Icons*/
+/*
 .header_icons {
   margin-right: 10px;
 }
@@ -194,11 +198,12 @@ ul {
   display: flex;
   align-items: center;
 }
+*/
 
 /* MAIN*/
 
 /* Section #1*/
-
+/*
 .section_headline {
   background-color: var(--background_grey);
   padding-top: 200px;
@@ -257,7 +262,7 @@ ul {
 }
 
 /* ----Modal window + button----*/
-
+/*
 .backdrop {
   position: fixed;
   top: 0;
@@ -323,9 +328,9 @@ ul {
   transition: background-color 250ms var(--cubic_bezier),
     color 250ms var(--cubic_bezier);
 }
-
+*/
 /*---- Form in modal window ----*/
-
+/*
 .modal_fieldset {
   border: transparent;
 
@@ -416,10 +421,6 @@ ul {
   left: 16px;
 }
 
-.term_of_use_text {
-  margin-right: ;
-}
-
 .term_of_use_text,
 .term_of_use_link {
   font-weight: 400;
@@ -449,7 +450,7 @@ ul {
 }
 
 /*---- Custom Checker ----*/
-
+/*
 .term_of_use_checkbox {
   appearance: none;
   position: absolute;
@@ -474,6 +475,7 @@ ul {
 }
 
 /*---- Modal Form Icons ----*/
+/*
 .fieldset_div {
   position: relative;
 }
@@ -493,7 +495,7 @@ ul {
 }
 
 /* Section #2*/
-
+/*
 .section_2 {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -506,7 +508,7 @@ ul {
 }
 
 /* ---Section icons---*/
-
+/*
 .our_benefits_icon {
   display: flex;
   justify-content: center;
@@ -537,7 +539,7 @@ ul {
 }
 
 /* ------ */
-
+/*
 .our_benefits h3 {
   font-weight: 700;
   font-size: 14px;
@@ -552,7 +554,6 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
   margin: 0px;
 }
 
@@ -565,7 +566,7 @@ ul {
 }
 
 /* Section #3*/
-
+/*
 .section_3 {
   display: flex;
   flex-direction: column;
@@ -603,7 +604,7 @@ ul {
 }
 
 /* Paragraph on img*/
-
+/*
 .sect3_text_item {
   position: absolute;
   bottom: 0;
@@ -624,7 +625,7 @@ ul {
 }
 
 /* Section #4*/
-
+/*
 .section_4 {
   background-color: var(--background_grey);
   padding: 94px 0px 94px 0px;
@@ -668,7 +669,6 @@ ul h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
   margin-bottom: 16px;
 }
@@ -678,7 +678,7 @@ ul h3 {
 }
 
 /*---Section 4 icons---*/
-
+/*
 .our_team_socials {
   display: flex;
   justify-content: space-between;
@@ -716,6 +716,7 @@ ul h3 {
 /* ----- */
 
 /*---Section 5---*/
+/*
 .section_5 {
   background-color: var(--color_white);
   padding: 94px 0px 94px 0px;
@@ -756,7 +757,7 @@ ul h3 {
 }
 
 /* --- Section 5 icons ---*/
-
+/*
 .s5_partners_icons {
   width: 106px;
   height: 60px;
@@ -773,6 +774,7 @@ ul h3 {
 }
 
 /*--Portfolio--*/
+
 .section_portf_btn {
   padding: 94px 0px 94px 0px;
 }
@@ -794,7 +796,6 @@ ul h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  /* identical to box height, or 162% */
   text-align: center;
   cursor: pointer;
   background: var(--background_grey);
@@ -808,7 +809,6 @@ ul h3 {
 .portfolio_buttons:focus {
   color: var(--color_white);
   background: var(--brand_style);
-  /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -848,7 +848,6 @@ ul h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--color_black);
   margin-bottom: 4px;
@@ -858,7 +857,6 @@ ul h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  /* identical to box height, or 188% */
 }
 .our_jobs_link {
   display: block;
@@ -869,10 +867,11 @@ ul h3 {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /*background-color: var(--brand_style);*/
+  
 }
 
 /* ---- Text on img + hover ----*/
+
 .our_jobs_link:hover .our_jobs_overlay,
 .our_jobs_link:focus .our_jobs_overlay {
   transform: translateY(0);
@@ -913,6 +912,7 @@ ul h3 {
 }
 
 /* --Footer--*/
+/*
 .footer_main {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -924,7 +924,6 @@ ul h3 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  /* identical to box height */
   color: var(--color_white);
   margin-bottom: 20px;
   display: inline-block;
@@ -970,7 +969,6 @@ ul h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
   color: var(--color_white);
 
   transition: color 250ms var(--cubic_bezier);
@@ -992,6 +990,7 @@ ul h3 {
 }
 
 /* ---Join us div---*/
+/*
 .joinus_text {
   font-weight: 700;
   font-size: 14px;
@@ -1033,7 +1032,7 @@ ul h3 {
 }
 
 /* ---- Sign Up Div ---- */
-
+/*
 .sign_up_block {
   width: 570px;
 }
@@ -1070,9 +1069,8 @@ ul h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
-
 
 .signup_submit {
   display: flex;
