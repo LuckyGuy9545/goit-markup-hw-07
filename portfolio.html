@@ -28,31 +28,33 @@
           >
           <ul class="header-list">
             <li class="header-list__item">
-              <a href="./index.html" class="header-list__link"
-                >Студія
-              </a>
+              <a href="./index.html" class="header-list__link">Студія </a>
             </li>
             <li class="header-list__item">
-              <a href="portfolio.html" class="header-list__link header-list__link--active">Портфоліо </a>
+              <a
+                href="portfolio.html"
+                class="header-list__link header-list__link--active"
+                >Портфоліо
+              </a>
             </li>
             <li class="header-list__item">
               <a href="./contacts" class="header-list__link">Контакти </a>
             </li>
           </ul>
         </nav>
-        <!--Adrress-->
-        <ul class="adrress-list">
+        <!--Address-->
+        <ul class="address-list">
           <li>
-            <a href="mailto:info@devstudio.com" class="adrress-list__link"
-              ><svg class="adrress-list__icons mail">
+            <a href="mailto:info@devstudio.com" class="address-list__link"
+              ><svg class="address-list__icons mail">
                 <use href="./image/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="adrress-list__link"
-              ><svg class="adrress-list__icons phone">
+            <a href="tel:+380961111111" class="address-list__link"
+              ><svg class="address-list__icons phone">
                 <use href="./image/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -65,40 +67,40 @@
     <!--MAIN-->
     <main>
       <!--MAIN BUTTONS-->
-      <section class="section_portf_btn">
+      <section class="button-menu">
         <div class="container">
           <h1 class="visually_hidden">Портфоліо</h1>
-          <ul class="pf_btn">
-            <li class="pf_btn_li">
-              <button type="button" class="portfolio_buttons">Усі</button>
+          <ul class="button-menu__list">
+            <li class="button-menu__item">
+              <button type="button" class="button-menu__btn">Усі</button>
             </li>
-            <li class="pf_btn_li">
-              <button type="button" class="portfolio_buttons">Веб-сайти</button>
+            <li class="button-menu__item">
+              <button type="button" class="button-menu__btn">Веб-сайти</button>
             </li>
-            <li class="pf_btn_li">
-              <button type="button" class="portfolio_buttons">Додатки</button>
+            <li class="button-menu__item">
+              <button type="button" class="button-menu__btn">Додатки</button>
             </li>
-            <li class="pf_btn_li">
-              <button type="button" class="portfolio_buttons">Дизайн</button>
+            <li class="button-menu__item">
+              <button type="button" class="button-menu__btn">Дизайн</button>
             </li>
-            <li class="pf_btn_li">
-              <button type="button" class="portfolio_buttons">Маркетинг</button>
+            <li class="button-menu__item">
+              <button type="button" class="button-menu__btn">Маркетинг</button>
             </li>
           </ul>
 
           <!--MAIN IMG-->
-          <ul class="our_jobs">
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+          <ul class="card-set">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imglaptop(1).jpg"
                     alt="Люди на моніторі ноутбука"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -106,23 +108,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Технокряк</h2>
-                  <p class="our_jobs_description">Веб-сайт</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Технокряк</h2>
+                  <p class="card-set__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgbasket(1).jpg"
                     alt="Люди грають в баскетбол"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -130,23 +132,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p class="our_jobs_description">Дизайн</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="card-set__description">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgseafood(1).jpg"
                     alt="Логотип ресторану Морська Їжа"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -154,23 +158,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Ресторан Seafood</h2>
-                  <p class="our_jobs_description">Додаток</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Ресторан Seafood</h2>
+                  <p class="card-set__description">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgheadphones(1).jpg"
                     alt="Чорні навушники"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -178,23 +182,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Проєкт Prime</h2>
-                  <p class="our_jobs_description">Маркетинг</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Проєкт Prime</h2>
+                  <p class="card-set__description">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgprojectbox(1).jpg"
                     alt="Дві коробки з проектами"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -202,23 +206,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Проєкт Boxes</h2>
-                  <p class="our_jobs_description">Додаток</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Проєкт Boxes</h2>
+                  <p class="card-set__description">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgmacohno(1).jpg"
                     alt="Інформація на моніторі"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -226,23 +230,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Inspiration has no Borders</h2>
-                  <p class="our_jobs_description">Веб-сайт</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Inspiration has no Borders</h2>
+                  <p class="card-set__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgbook(1).jpg"
                     alt="Книга з рекламою"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -250,23 +254,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Видання Limited Edition</h2>
-                  <p class="our_jobs_description">Дизайн</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Видання Limited Edition</h2>
+                  <p class="card-set__description">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imglabel(1).jpg"
                     alt="Етикетка"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -274,23 +278,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Проект LAB</h2>
-                  <p class="our_jobs_description">Маркетинг</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Проект LAB</h2>
+                  <p class="card-set__description">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="our_jobs_li">
-              <a class="our_jobs_link" href="">
-                <div class="our_jobs_thumb">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="card-set__thumb">
                   <img
                     src="./image/imgsmallpc(1).jpg"
                     alt="Людина працює на ноутбуці"
                     width="370"
                     height="294"
                   />
-                  <div class="our_jobs_overlay">
-                    <p class="our_jobs_img_text">
+                  <div class="card-set__overlay">
+                    <p class="card-set__img-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Debitis tenetur nam minima adipisci, a commodi recusandae,
                       neque nemo voluptatibus fuga suscipit unde repellendus!
@@ -298,9 +302,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="our_jobs_text_after">
-                  <h2>Growing Business</h2>
-                  <p class="our_jobs_description">Додаток</p>
+                <div class="card-set__text-after">
+                  <h2 class="card-set__title">Growing Business</h2>
+                  <p class="card-set__description">Додаток</p>
                 </div>
               </a>
             </li>
@@ -310,63 +314,75 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer_main">
+    <footer class="footer">
       <div class="container">
-        <div class="foot_adrress_block">
-          <a href="./index.html" class="footer_logo">
-            <span class="footer_web">Web</span>Studio
+        <div class="address">
+          <a href="./index.html" class="address__logo">
+            <span class="address__logoWeb">Web</span>Studio
           </a>
           <address>
-            <ul class="adrress_ul_foot">
-              <li>
+            <ul class="contact-list">
+              <li class="contact-list__item">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="footer_link"
+                  class="contact-list__maplink"
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="contact-link_f"
+              <li class="contact-list__item">
+                <a href="mailto:info@devstudio.com" class="contact-list__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+380961111111" class="contact-link_f"
+              <li class="contact-list__item">
+                <a href="tel:+380961111111" class="contact-list__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="joinus_block">
-          <p class="joinus_text">Приєднуйтесь</p>
-          <ul class="joinus_socials">
+        <div class="joinUs">
+          <p class="joinUs__text">Приєднуйтесь</p>
+          <ul class="social-list">
             <li>
-              <a href="https://www.instagram.com/accounts/login/">
-                <svg class="icon" width="44" height="44">
+              <a
+                href="https://www.instagram.com/accounts/login/"
+                class="social-list__link social-list__link--alternative"
+              >
+                <svg class="social-list__icon" width="44" height="44">
                   <use href="./image/symbol-defs.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/intent/tweet">
-                <svg class="icon" width="44" height="44">
+              <a
+                href="https://twitter.com/intent/tweet"
+                class="social-list__link social-list__link--alternative"
+              >
+                <svg class="social-list__icon" width="44" height="44">
                   <use href="./image/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/login/">
-                <svg class="icon" width="44" height="44">
+              <a
+                href="https://www.facebook.com/login/"
+                class="social-list__link social-list__link--alternative"
+              >
+                <svg class="social-list__icon" width="44" height="44">
                   <use href="./image/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/login/ru">
-                <svg class="icon" width="44" height="44">
+              <a
+                href="https://www.linkedin.com/login/ru"
+                class="social-list__link social-list__link--alternative"
+              >
+                <svg class="social-list__icon" width="44" height="44">
                   <use href="./image/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -374,20 +390,20 @@
           </ul>
         </div>
 
-        <div class="sign_up_block">
-          <p class="sign_up_text">Підпишіться на розсилку</p>
-          <form name="signup_form" autocomplete="on" class="signup_email_form">
-            <div class="email_form_field">
+        <div class="signUp">
+          <p class="signUp__text">Підпишіться на розсилку</p>
+          <form name="signup_form" autocomplete="on" class="email-form">
+            <div class="email-form__field">
               <label>
                 <input
                   type="email"
-                  class="signup_input_email"
+                  class="email-form__input"
                   placeholder="E-mail"
                 />
               </label>
-              <button type="submit" class="signup_submit">
+              <button type="submit" class="submit-btn">
                 Підписатися
-                <svg class="form_footer_icon" width="24" height="24">
+                <svg class="submit-btn__icon" width="24" height="24">
                   <use
                     href="./image/symbol-defs.svg#icon-form-footer-send"
                   ></use>

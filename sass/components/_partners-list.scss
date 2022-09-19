@@ -1,0 +1,42 @@
+
+
+.partners-list {
+    display: flex;
+}
+
+.partners-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    background-color: inherit;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    background-color: $color_white;
+    color: $social_text;
+
+    transition: border-color 250ms $cubic_bezier,
+        color 250ms $cubic_bezier;
+}
+
+.partners-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* --- Section 5 icons ---*/
+
+.partners-list__icons {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+.partners-list__link:hover,
+.partners-list__link:focus {
+    border-color: $brand_style;
+    color: $brand_style;
+
+    transition: border-color 250ms $cubic_bezier,
+        color 250ms $cubic_bezier;
+}

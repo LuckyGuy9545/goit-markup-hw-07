@@ -1,10 +1,10 @@
 /*---Section 5---*/
-.section_5 {
+.section-five {
     background-color: $color_white;
     padding: 94px 0px 94px 0px;
 }
 
-.s5_headline {
+.section-five__title {
     width: 297px;
     margin: 0px auto 50px auto;
     font-weight: 700;
@@ -14,43 +14,3 @@
     color: $color_black;
 }
 
-.s5_partners {
-    display: flex;
-}
-
-.s5_partners_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    background-color: inherit;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    background-color: $color_white;
-    color: $social_text;
-
-    transition: border-color 250ms $cubic_bezier,
-        color 250ms $cubic_bezier;
-}
-
-.s5_partners>li:not(:last-child) {
-    margin-right: 30px;
-}
-
-/* --- Section 5 icons ---*/
-
-.s5_partners_icons {
-    width: 106px;
-    height: 60px;
-    fill: currentColor;
-}
-
-.s5_partners_link:hover,
-.s5_partners_link:focus {
-    border-color: $brand_style;
-    color: $brand_style;
-
-    transition: border-color 250ms $cubic_bezier,
-        color 250ms $cubic_bezier;
-}

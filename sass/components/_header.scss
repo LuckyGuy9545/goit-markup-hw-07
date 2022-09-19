@@ -57,7 +57,7 @@
     margin-right: 0px;
 }
 
-.adrress-list__link {
+.address-list__link {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -70,17 +70,17 @@
     transition: color 250ms $cubic_bezier;
 }
 
-.adrress-list {
+.address-list {
     display: flex;
 }
 
-.adrress-list li {
+.address-list li {
     display: flex;
     align-items: center;
     margin-right: 50px;
 }
 
-.adrress-list li:last-child {
+.address-list li:last-child {
     margin-right: 0px;
 }
 
@@ -90,8 +90,8 @@
     transition: color 250ms $cubic_bezier;
 }
 
-.adrress-list__link:hover,
-.adrress-list__link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
     color: $brand_style;
     transition: color 250ms $cubic_bezier;
 }
@@ -115,7 +115,7 @@
 }
 
 /* HEADER Icons*/
-.adrress-list__icons {
+.address-list__icons {
     margin-right: 10px;
 }
 

@@ -1,34 +1,33 @@
 /* Section #3*/
 
-.section_3 {
+.section-three {
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
 }
 
-.ul_section_3 {
+.product {
     display: flex;
     margin: 0;
 }
 
-.ul_section_3_item {
+.product__item {
     position: relative;
     margin-right: 30px;
 }
 
-.ul_section_3_item:last-child {
+.product__item:last-child {
     margin-right: 0px;
 }
 
-.section_title {
+.section-three__title {
     width: 366px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
 
-.section_title,
-.our_team {
+.section-three__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -38,7 +37,7 @@
 
 /* Paragraph on img*/
 
-.sect3_text_item {
+.product__title {
     position: absolute;
     bottom: 0;
     left: 0;

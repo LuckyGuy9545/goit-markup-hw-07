@@ -1,6 +1,45 @@
+/* ----Backdrop + Modal + Close button----*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms $cubic_bezier;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    background-color: $color_white;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms $cubic_bezier;
+}
+
 /*---- Form in modal window ----*/
 
-.modal_fieldset {
+.modal-form__fieldset {
     border: transparent;
 
     display: flex;
@@ -10,7 +49,8 @@
     padding: 0;
 }
 
-.modal_form_legend {
+
+.modal-form__legend {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -18,47 +58,6 @@
 
     color: $color_black;
     margin-bottom: 12px;
-}
-
-.modal_input {
-    height: 40px;
-    padding-left: 42px;
-    cursor: pointer;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-}
-
-.modal_input:hover,
-.modal_input:focus {
-    border-color: $brand_style;
-    outline: none;
-}
-
-.modal_input_comment {
-    letter-spacing: 0.01em;
-
-    height: 120px;
-    padding: 12px 16px;
-    resize: none;
-    cursor: text;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-}
-
-.modal_input_comment:hover,
-.modal_input_comment:focus {
-    border-color: $brand_style;
-    outline: none;
-}
-
-.form_submit_btn {
-    margin: 0 auto;
-}
-
-.form_fieldset_div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .label {
@@ -69,87 +68,46 @@
 
     display: block;
     color: $color_grey;
+
+}
+
+.label:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.label_heading {
+
+
+.label__input {
+    height: 40px;
+    padding-left: 42px;
+    cursor: pointer;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.label__input:hover,
+.label__input:focus {
+    border-color: $brand_style;
+    outline: none;
+}
+
+.label__div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.label__heading {
     display: inline-block;
     margin-bottom: 4px;
 }
 
-.modal_comment_div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+.label__div--comment {
+
+    margin-bottom: 10px;
 }
 
-.comment_placeholder {
-    position: absolute;
-    top: 12px;
-    left: 16px;
-}
-
-.term_of_use_text,
-.term_of_use_link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: $color_grey;
-    margin: 0;
-}
-
-.term_of_use_link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: $brand_style;
-    text-decoration: underline;
-}
-
-.term_of_use_div {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.term_of_use_label {
-    display: flex;
-    align-items: center;
-}
-
-/*---- Custom Checker ----*/
-
-.term_of_use_checkbox {
-    appearance: none;
-    position: absolute;
-}
-
-.term_of_use_checkbox:checked+.term_of_use_checkicon {
-    background-color: $brand_style;
-    border-color: transparent;
-    background-image: url(../image/icon\ check.svg);
-    background-size: contain;
-    background-origin: border-box;
-}
-
-.term_of_use_checkicon {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-
-    cursor: pointer;
-    border: 2px solid $color_black;
-    border-radius: 2px;
-    margin-right: 10px;
-}
-
-/*---- Modal Form Icons ----*/
-.fieldset_div {
-    position: relative;
-}
-
-.modal_form_icon {
+.label__icon {
     position: absolute;
     top: 11px;
     left: 12px;
@@ -157,8 +115,30 @@
     transition: fill 250ms $cubic_bezier;
 }
 
-.form_fieldset_div:focus-within>.modal_form_icon,
-.form_fieldset_div:hover>.modal_form_icon {
+.label__div:focus-within>.label__icon,
+.label__div:hover>.label__icon {
     fill: $brand_style;
     transition: fill 250ms $cubic_bezier;
 }
+
+.label__input_comment {
+    letter-spacing: 0.01em;
+
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    cursor: text;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.label__input_comment:hover,
+.label__input_comment:focus {
+    border-color: $brand_style;
+    outline: none;
+}
+
+.form_submit_btn {
+    margin: 0 auto;
+}
+
