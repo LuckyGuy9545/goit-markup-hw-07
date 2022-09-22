@@ -1,13 +1,9 @@
-
-
-
 /* ---- Sign Up Div ---- */
 
 .signUp {
-    width: 570px;
-}
+  width: 570px;
 
-.signUp__text {
+  &__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -16,15 +12,17 @@
     color: #ffffff;
 
     margin-bottom: 20px;
+  }
 }
 
-.email-form__field {
+.email-form {
+  &__field {
     position: relative;
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.email-form__input {
+  &__input {
     width: 358px;
     height: 50px;
 
@@ -34,12 +32,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-}
+  }
 
-.email-form__input::placeholder {
+  &__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+  }
 }
-

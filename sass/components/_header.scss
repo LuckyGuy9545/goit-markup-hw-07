@@ -1,20 +1,19 @@
 .header .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header {
-    background-color: $color_white;
-    border-bottom: 1px solid #ececec;
-}
+  background-color: $color_white;
+  border-bottom: 1px solid #ececec;
 
-.header__navigation {
+  &__navigation {
     display: flex;
     align-items: center;
     margin-right: auto;
-}
+  }
 
-.header__logohead {
+  &__logohead {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -25,83 +24,19 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
-}
+  }
 
-.header__logo-web {
+  &__logo-web {
     color: $brand_style;
+  }
 }
 
 .header-list {
-    display: flex;
-    margin-right: auto;
-}
+  display: flex;
+  margin-right: auto;
 
-.header-list__link {
-    position: relative;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    color: $color_black;
-    cursor: pointer;
-    padding: 32px 0 32px 0;
-    transition: color 250ms $cubic_bezier;
-}
-
-.header-list__item {
-    margin-right: 50px;
-}
-
-.header-list__item:last-child {
-    margin-right: 0px;
-}
-
-.address-list__link {
-    display: flex;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    color: $color_grey;
-    cursor: pointer;
-    padding: 32px 0 32px 0;
-    transition: color 250ms $cubic_bezier;
-}
-
-.address-list {
-    display: flex;
-}
-
-.address-list li {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-}
-
-.address-list li:last-child {
-    margin-right: 0px;
-}
-
-.header-list__link:hover,
-.header-list__link:focus {
-    color: $brand_style;
-    transition: color 250ms $cubic_bezier;
-}
-
-.address-list__link:hover,
-.address-list__link:focus {
-    color: $brand_style;
-    transition: color 250ms $cubic_bezier;
-}
-
-.header-list .link.current {
-    color: $brand_style;
-}
-
-/* Подчеркивание Current page*/
-.header-list__link--active::after {
+  /* Подчеркивание Current page*/
+  &__link--active::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -112,21 +47,86 @@
     height: 4px;
     background-color: $brand_style;
     border-radius: 4px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: $color_black;
+    cursor: pointer;
+    padding: 32px 0 32px 0;
+    transition: color 250ms $cubic_bezier;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $brand_style;
+    transition: color 250ms $cubic_bezier;
+  }
+
+  &__link--active {
+    color: $brand_style;
+  }
 }
 
-/* HEADER Icons*/
-.address-list__icons {
+.address-list {
+  display: flex;
+
+  &__link {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: $color_grey;
+    cursor: pointer;
+    padding: 32px 0 32px 0;
+    transition: color 250ms $cubic_bezier;
+  }
+
+  & li {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  & li:last-child {
+    margin-right: 0px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $brand_style;
+    transition: color 250ms $cubic_bezier;
+  }
+
+  /* HEADER Icons*/
+  &__icons {
     margin-right: 10px;
+  }
 }
 
 .mail {
-    width: 16px;
-    height: 12px;
-    fill: currentColor;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
 }
 
 .phone {
-    width: 10px;
-    height: 16px;
-    fill: currentColor;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
 }

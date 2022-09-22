@@ -1,22 +1,22 @@
 .button-menu {
     padding: 94px 0px 94px 0px;
-}
 
-.button-menu__list {
+
+&__list {
     display: flex;
     margin: 0px auto 34px auto;
     justify-content: center;
 }
 
-.button-menu__item {
+&__item {
     margin-right: 8px;
 }
 
-.button-menu__item:last-child {
+&__item:last-child {
     margin-right: 0;
 }
 
-.button-menu__btn {
+&__btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -30,11 +30,12 @@
     width: max-content;
 }
 
-.button-menu__btn:hover,
-.button-menu__btn:focus {
+&__btn:hover,
+&__btn:focus {
     color: $color_white;
     background: $brand_style;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
 }

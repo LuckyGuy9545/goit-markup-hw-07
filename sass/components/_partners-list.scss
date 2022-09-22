@@ -1,10 +1,7 @@
-
-
 .partners-list {
-    display: flex;
-}
+  display: flex;
 
-.partners-list__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,27 +13,26 @@
     background-color: $color_white;
     color: $social_text;
 
-    transition: border-color 250ms $cubic_bezier,
-        color 250ms $cubic_bezier;
-}
+    transition: border-color 250ms $cubic_bezier, color 250ms $cubic_bezier;
+  }
 
-.partners-list__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
-}
+  }
 
-/* --- Section 5 icons ---*/
+  /* --- Section 5 icons ---*/
 
-.partners-list__icons {
+  &__icons {
     width: 106px;
     height: 60px;
     fill: currentColor;
-}
+  }
 
-.partners-list__link:hover,
-.partners-list__link:focus {
+  &__link:hover,
+  &__link:focus {
     border-color: $brand_style;
     color: $brand_style;
 
-    transition: border-color 250ms $cubic_bezier,
-        color 250ms $cubic_bezier;
+    transition: border-color 250ms $cubic_bezier, color 250ms $cubic_bezier;
+  }
 }

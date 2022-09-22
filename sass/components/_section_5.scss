@@ -1,10 +1,9 @@
 /*---Section 5---*/
 .section-five {
-    background-color: $color_white;
-    padding: 94px 0px 94px 0px;
-}
+  background-color: $color_white;
+  padding: 94px 0px 94px 0px;
 
-.section-five__title {
+  &__title {
     width: 297px;
     margin: 0px auto 50px auto;
     font-weight: 700;
@@ -12,5 +11,5 @@
     line-height: 1.16;
     text-align: center;
     color: $color_black;
+  }
 }
-

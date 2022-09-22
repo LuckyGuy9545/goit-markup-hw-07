@@ -1,17 +1,16 @@
 /* Section #2*/
 
 .section-two {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefit-list {
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
-.benefit-list h3 {
+  &__heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -19,27 +18,23 @@
     color: $color_black;
     text-align: start;
     margin-bottom: 10px;
-}
+  }
 
-.benefit-list p {
+  &__details {
     width: 270px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     margin: 0px;
-}
+  }
 
-.benefit-list li:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
-}
+  }
 
-.benefit-list li {
-    width: 270px;
-}
+  /* ---Section icons---*/
 
-/* ---Section icons---*/
-
-.benefit-list__thumb {
+  &__thumb {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,25 +43,10 @@
     background-color: $background_grey;
     border-radius: 4px;
     margin-bottom: 30px;
-}
+  }
 
-.benefit-list__thumb li {
-    display: block;
-    width: 270px;
-    padding: 25px 100px 25px 100px;
-    margin-bottom: 30px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-}
-
-.benefit-list__thumb li:not(:last-child) {
-    margin-right: 30px;
-}
-
-.benefit-list__icon {
+  &__icon {
     width: 70px;
     height: 70px;
+  }
 }
-
-/* ------ */
-
